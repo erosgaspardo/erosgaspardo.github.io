@@ -352,4 +352,50 @@ a#link:hover {
   font-size: 15px;
 }
 
+/* FOR THE INDEX PAGE */
+* {
+  box-sizing: border-box;
+}
+html, body, div, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 5em 3em;
+  justify-content: space-between;
+  img {max-height: 160px;}
+}
+
+.item {
+  margin: 2rem;
+}
+
+.item { animation: fadeIn 2500ms; }
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@media screen and (max-width: 480px) { /*@media = media query > se il medium che ti interroga è uno schermo e la sua larghezza è al massimo 480px allora...*/
+  .container {
+      padding: 1em;
+
+  }
+  .container img {
+      margin: 1em;
+      max-height: none;
+      width: 40%;
+      object-fit: contain;
+  } 
+}
