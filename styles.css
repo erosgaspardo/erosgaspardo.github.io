@@ -374,6 +374,8 @@ body {
   padding: 3em 5em 3em;
   justify-content: space-between;
   img {max-height: 160px;}
+width: 100%;
+max-width: 100%;
 }
 
 .item {
@@ -387,7 +389,7 @@ body {
 100% { opacity: 1; }
 }
 
-@media screen and (max-width: 480px) { /*@media = media query > se il medium che ti interroga è uno schermo e la sua larghezza è al massimo 480px allora...*/
+@media screen and (max-width: 390px) { /*@media = media query > se il medium che ti interroga è uno schermo e la sua larghezza è al massimo 480px allora...*/
   .container {
       padding: 1em;
 
