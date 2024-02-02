@@ -203,11 +203,22 @@ a:hover {
     transform: translateY(105%);
   }
 
+  .wrapper#boitebleue {
+    transform: translateY(45%);
+  }
+
+  .wrapper#isola {
+    transform: translateY(110%);
+  }
+
+  .wrapper#untitled {
+    display: none;
+  }
 
    ul#project-list {
     display: flex;
     flex-flow: column;
-    line-height: 1.5em;
+    line-height: 3em;
     font-size: 20px;
     align-items: center;
     margin-top: 20vh;
