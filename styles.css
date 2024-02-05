@@ -155,7 +155,10 @@ a:hover {
     font-family: EB Garamond;
     font-weight: lighter;
   }
-   
+
+ul a:hover {
+  color: blue;
+}
 }
 
 
