@@ -156,8 +156,8 @@ a:hover {
     font-weight: lighter;
   }
 
-ul a:hover {
-  color: blue !important;
+a:hover {
+  color: black;
 }
 }
 
