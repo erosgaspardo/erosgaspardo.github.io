@@ -129,7 +129,9 @@ a:hover {
   }
 
   .wrapper {
-    transform: translateY(100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
    }
 
   .wrapper#architettura {
@@ -152,12 +154,30 @@ a:hover {
     font-size: 44px;
     padding-top: 10vh;
     margin-left: 30px;
-    font-family: EB Garamond;
-    font-weight: lighter;
+    font-family: Helvetica Neue;
+    font-weight: 500;
+    color: black;
+  }
+
+  span {
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 500;
+    color: #ADADAD;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
   }
 
 a:hover {
   color: black;
+}
+
+ul a:hover {
+  color: blue;
+
 }
 }
 
@@ -221,12 +241,25 @@ a:hover {
    ul#project-list {
     display: flex;
     flex-flow: column;
-    line-height: 3em;
-    font-size: 20px;
+    line-height: 2em;
+    font-size: 26px;
+    margin-top: 8em;
     align-items: center;
-    margin-top: 20vh;
-    font-family: EB Garamond;
-    font-weight: lighter;
+    font-family: Helvetica Neue;
+    font-weight: 500;
+    color: black;
+  }
+
+  span {
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 500;
+    color: #ADADAD;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
   }
 
   .wrapper {
@@ -262,7 +295,6 @@ ul {
 
 
 a#link:hover {
-  font-style: italic;
   text-decoration: none;
 }
 
@@ -384,7 +416,7 @@ a#link:hover {
   }
   .gallery img {
       margin: 1em;
-      max-height: 125px;
+      max-height: 160px;
       width: 80%;
       object-fit: contain;
   } 
