@@ -262,6 +262,11 @@ ul a:hover {
   .wrapper {
     font-size: 16px;
   }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 .text {
@@ -417,4 +422,16 @@ a#link:hover {
       width: 80%;
       object-fit: contain;
   } 
+}
+
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 2% 8%;
 }
