@@ -37,7 +37,6 @@
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_Image-15.jpg",
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_Image_.jpg",
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/Image.jpg",
-    "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/Image.jpg",
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/Image3.jpg",
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_Image-11.jpg",
     "https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/DSC01055.jpg",
