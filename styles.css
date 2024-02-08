@@ -265,8 +265,8 @@ ul a:hover {
 
   .grid-wrapper {
     display: grid;
-    scale: 90%;
-    transform: translateY(-500px);
+    scale: 85%;
+    transform: translateY(-750px);
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
