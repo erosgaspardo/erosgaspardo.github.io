@@ -428,10 +428,10 @@ a#link:hover {
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  row-gap: 40px;
-  column-gap: 30px;
+  row-gap: 10px;
+  column-gap: 10px;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 2% 8%;
+  padding: 2% 10%;
 }
