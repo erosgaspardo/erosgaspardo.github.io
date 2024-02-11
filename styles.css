@@ -175,7 +175,10 @@ a:hover {
 
 ul a:hover {
   color: blue;
+}
 
+#contact-item:hover {
+  color: blue;
 }
 }
 
@@ -430,6 +433,7 @@ a#link:hover {
       width: 80%;
       object-fit: contain;
   } 
+
 }
 
 
