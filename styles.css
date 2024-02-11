@@ -446,7 +446,10 @@ a#link:hover {
 
 
 .flickity-page-dots {
-  left: 800px;
+  position: relative;
+  display: block;
+  align-content: end;
+  left: 0;
 }
 	.flickity-page-dots:before {
   content: "/";
