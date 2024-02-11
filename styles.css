@@ -119,6 +119,7 @@ a:hover {
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
+    scale: 0.8;
   }
   
   .carousel-wrapper:hover {
@@ -270,6 +271,10 @@ ul a:hover {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
+  .flickity-page-dots {
+    left: 0px !important;
+  }
+
 }
 
 .text {
@@ -383,7 +388,7 @@ a#link:hover {
 .project-description {
   position: absolute;
   font-size: 20px;
-  color: #676767;
+  color: #ADADAD;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -437,4 +442,45 @@ a#link:hover {
   align-items: center;
   justify-items: center;
   padding: 2% 10%;
+}
+
+
+.flickity-page-dots {
+  left: 800px;
+}
+	.flickity-page-dots:before {
+  content: "/";
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+  left: 0px;
+}
+.flickity-page-dots .dot,
+.flickity-page-dots .dot:before,
+.flickity-page-dots .dot:after {
+  float: left;
+  width: 10px;
+  height: 20px;
+}
+.flickity-page-dots .dot {
+  counter-increment: carousel-cell;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+}
+.flickity-page-dots .dot.is-selected {
+  z-index: 1;
+}
+.flickity-page-dots .dot:before {
+  content: counter(carousel-cell);
+  background-color: #fff;
+  text-align: right;
+}
+.flickity-page-dots .dot:last-child:after {
+  content: counter(carousel-cell);
+  position: absolute;
+  top: 0;
+  right: -24px;
+  text-align: left;
 }
