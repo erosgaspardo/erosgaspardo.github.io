@@ -278,13 +278,6 @@ ul a:hover {
     left: 0px !important;
   }
 
-  section {
-    background-image:url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/Image11.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 100vh;
-    background-position: bottom;
 }
 
 .text {
@@ -497,5 +490,4 @@ a#link:hover {
   top: 0;
   right: -24px;
   text-align: left;
-}
 }
