@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <meta name="description" content="Eros Gaspardo is a Photographer and Visual Artist based in Italy">
     <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/smheros/erosgaspardo/main/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/smheros/erosgaspardo/main/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/smheros/erosgaspardo/main/favicon-16x16.png">
@@ -12,71 +11,81 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
-    
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="flickity.css" media="screen">
-    <link rel="stylesheet" href="flickity-fade.css">
+        
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" href="/flickity.css" media="screen">
+    <link rel="stylesheet" href="/flickity-fade.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
-    <script src="flickity-fade.js"></script>
-    <script src="flickity.pkgd.min.js"></script>
+    <script src="/flickity-fade.js"></script>
+    <script src="/flickity.pkgd.min.js"></script>
+    <script src="/script.js"></script>
+
     <title>Incomplete Itinerary: 24 Contemporary Churches in Milan</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <p id="home"><a href="https://erosgaspardo.github.io">EROS GASPARDO</a></p>
-            <p id="projects"><a href="https://erosgaspardo.github.io/projects">PROJECTS</a></p>
-            <p id="about"><a href="https://erosgaspardo.github.io/about">ABOUT</a></p>
-            <p id="index"><a href="https://erosgaspardo.github.io/gallery">INDEX</a></p>
-        </div>
-    </header>
+
+
+    <body>
+        <header>
+            <div class="container-header">
+                <p id="home"><a href="/index.html">EROS GASPARDO</a></p>
+                <p id="projects"><a href="/projects.html">PROJECTS</a></p>
+                <p id="about"><a href="/about.html">ABOUT</a></p>
+                <p id="index"><a href="">INDEX</a></p>
+            </div>
+        </header>
+
+        <article class="carousel-wrapper">
+            <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "draggable": false, "wrapAround": true, "autoPlay": true, "pageDots": false, "pauseAutoPlayOnHover": false, "fade": true, "counter": true, "adaptiveHeight": false }'>
+                <div class="carousel-cell">
+            <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/501A0275-HDR_1.jpg" alt="img2">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0179-scaled-1.jpeg" alt="img1">
+                            </div>
+                    <div class="carousel-cell">
+            <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/501A0297.jpg" alt="img3">
+                    </div>
+                    <div class="carousel-cell">
+             <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_est-1.jpg" alt="img4">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_est-3.jpg" alt="img5">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0344-HDR.jpg" alt="img">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0382.jpg" alt="img">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0403.jpg" alt="img">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0392.jpg" alt="img">
+                    </div>
+             </div>
+        </article>
+        <button onclick="myFunction()" id="readmore">Read More</button>
+    <div itemid="text-architettura" style="display: none;" class="text-container" id="text">        
+
     <div class="project-description">
     <div class="wrapper" id="architettura">
         <h1 id="project-title">
             Incomplete Itinerary: 24 Contemporary Churches in Milan <br>
             2023
         </h1>
-        <article id="project-text">
+        <article id="project-description">
             From 1945 onwards - and throughout the economic boom - the Ambrosian diocese was elevate with churches. In Milan itself, were built more then 300. In that historical moment, the spaces were an expression of the experimentation of famous architects. The project is an attempt to investigate the well-known works of architects among the cities of Milan, Varese and Pavia.<br>
             <br>
             Incomplete Itinerary - 24 Contemporary Churches in Lombardy traces an itinerary that lead to an unordinary path. In both the exhibition and the publication, the viewer is guided by a geographical map that locates the ecclesiastical buildings in the three areas explored, describing the traced "incomplete itinerary".
+            <br>
+            <br>
+            <span><button id="go-back" onclick="history.back()"> ← back</button></span>    
         </article>
     </div>
 </div>
 
-<article class="carousel-wrapper">
-    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "draggable": false, "wrapAround": true, "autoPlay": true, "pageDots": false, "pauseAutoPlayOnHover": false, "fade": true, "counter": true, "adaptiveHeight": false }'>
-        <div class="carousel-cell">
-    <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/501A0275-HDR_1.jpg" alt="img2">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0179-scaled-1.jpeg" alt="img1">
-                    </div>
-            <div class="carousel-cell">
-    <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/501A0297.jpg" alt="img3">
-            </div>
-            <div class="carousel-cell">
-     <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_est-1.jpg" alt="img4">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/1_est-3.jpg" alt="img5">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0344-HDR.jpg" alt="img">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0382.jpg" alt="img">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0403.jpg" alt="img">
-            </div>
-            <div class="carousel-cell">
-                <img class="carousel-cell-image" src="https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0392.jpg" alt="img">
-            </div>
-     </div>
-</article>
-    
+
 </body>
 </html>
