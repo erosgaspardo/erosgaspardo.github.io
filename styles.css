@@ -1,0 +1,505 @@
+/* GLOBAL STYLES */
+
+body {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    animation: fadeIn 2000ms;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flickity-page-dots {
+  position: 50% 50%;
+  display: block;
+  align-content: end;
+  left: 0;
+}
+	.flickity-page-dots:before {
+  content: "/";
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+  left: 0px;
+}
+.flickity-page-dots .dot,
+.flickity-page-dots .dot:before,
+.flickity-page-dots .dot:after {
+  float: left;
+  width: 10px;
+  height: 20px;
+}
+.flickity-page-dots .dot {
+  counter-increment: carousel-cell;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+}
+.flickity-page-dots .dot.is-selected {
+  z-index: 1;
+}
+.flickity-page-dots .dot:before {
+  content: counter(carousel-cell);
+  background-color: #fff;
+  text-align: right;
+}
+.flickity-page-dots .dot:last-child:after {
+  content: counter(carousel-cell);
+  position: absolute;
+  top: 0;
+  right: -24px;
+  text-align: left;
+}
+
+
+/* DESKTOP STYLES */
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    padding-left: 70px ;
+    padding-right: 70px;
+    font-size: 15px;
+    letter-spacing: .05rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.carousel-container {
+  position: relative;
+  padding-top: 10px;
+  animation: fadeIn 2000ms; }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+  }
+
+
+.flickity-button.previous, .flickity-button.next {
+	width: 50%;
+	background-color: transparent;
+	height: 100%;
+}
+
+.flickity-button.previous {
+	left: 0 !important;
+}
+
+.flickity-button.next {
+	right: 0 !important;
+}
+
+.flickity-button.previous svg, .flickity-button.next svg {
+	display: none;
+}
+
+.flickity-button.previous {
+  cursor: url("https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/left-e1705663119493-4.png"), move !important;
+}
+.flickity-button.next {
+  cursor: url("https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/right-arrow-e1705663148982.png"), move !important;
+}
+
+.flickity-button:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.flickity-button.flickity-button.next:hover {
+  background-color: transparent;
+}
+
+.flickity-button.previous:hover {
+  background-color: transparent;
+}
+
+#project-title {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #ADADAD;
+  margin-left: 25px;
+}
+
+#project-description {
+  position: absolute;
+  font-size: 18px;
+  color: #878787;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #ADADAD;
+  margin: 0px;
+}
+
+#h1  {
+  font-size: 15px;
+  margin-bottom: -20px;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer {
+  text-align: end;
+  font-size: 15px;
+}
+
+
+@media only screen and (min-device-width: 481px) {
+  #readmore {
+    display: none;
+  }
+
+  [itemid="text-boite"] {
+    transform: translateY(-600px) !important;
+  }
+
+.carousel-wrapper {
+  margin-top: 10px;
+  opacity: 0.30;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+    scale: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-wrapper:hover {
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
+}
+
+.text-container {
+  transform: translateY(-500px);
+  position: relative;
+  display: block !important;
+}
+
+#go-back {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #ffffff00;
+  padding: 0.3em 1.2em;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #878787;
+  scale: 80%;
+  transform: translateX(-40px);
+}
+
+.text {
+  transform: translateY(60%);
+  padding-left: 25px;
+  color: #ADADAD;  
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #ADADAD;
+  margin: 0px;
+}
+
+.footer {
+  transform: translateY(50vh);
+  text-align: right;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#h1  {
+  font-size: 15px;
+  margin-bottom: -20px;
+}
+
+a#link:hover {
+  text-decoration: none;
+}
+
+
+#link.hover {
+  position: relative;
+}
+
+.link1:hover:after {
+  content: url(/img/DSC00513-scaled.jpg); 
+  position: absolute;
+  right: -140px;
+  top: -35px;
+  height: 50% !important;
+  transform: scale(0.5);
+  animation: fadeIn 300ms;}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+.link2:hover::after {
+  content: url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/501A0179-scaled-1.jpeg);
+  position: absolute;
+  transform: scale(0.3);
+  height: 50% !important;
+  right: -850px;
+  top: -65px;
+  animation: fadeIn 300ms;}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+.link3:hover:after {
+  content: url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/02/La_Boate_NoiretBlanc3-scaled1.jpg); 
+  position: absolute;
+  right: -600px;
+  top: -80px;
+  height: 50% !important;
+  transform: scale(0.3);  animation: fadeIn 300ms;}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+.link4:hover:after {
+  content: url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/img021.jpg);
+  position: absolute;
+  transform: scale(0.5);
+  height: 50% !important;
+  right: -300px;
+  top: -50px;  animation: fadeIn 300ms;}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+.link5:hover::after {
+  content: url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/DSC01061.jpg);
+  position: absolute;
+  transform: scale(0.37);
+  height: 50% !important;
+  right: -350px;
+  top: -60px;  animation: fadeIn 300ms;}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
+
+
+section {
+  background-image:url(https://erosgaspardo.altervista.org/wp-content/uploads/2024/01/Image11.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+  width: auto;
+  height: 80vh;
+}  
+
+ul#project-list {
+  display: flex;
+  flex-flow: column;
+  line-height: 2em;
+  font-size: 44px;
+  padding-top: 10vh;
+  margin-left: 30px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  color: black;
+}
+
+span {
+  font-size: 12px;
+  padding-left: 5px;
+  font-weight: 500;
+  color: #ADADAD;
+}
+
+
+a:hover {
+color: black;
+}
+
+ul a:hover {
+color: blue;
+}
+
+#contact-item:hover {
+color: blue;
+}
+}
+
+
+
+
+/* MOBILE STYLES */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    animation: fadeIn 2000ms;}
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+
+  .container-header {
+    display: contents;
+    line-height: 8px;
+  }
+
+  #projects {
+    text-align: right;
+  }
+
+  #about  {
+    transform: translateY(-22.5px);
+  }
+
+  #index {
+    display: none;
+  }
+
+  .carousel-container {
+  transform: translateY(-25px);
+  }
+
+  .carousel-cell {
+    height: 500px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .carousel-cell-image {
+    max-height: 100%;
+    min-width: 50%;
+  }
+
+
+  .flickity-page-dots {
+    left: 0px !important;
+  }
+
+  h1#project-title {
+    font-size: 16px;
+  }
+
+  article#project-description {
+    font-size: 16px;
+    padding-bottom: 5rem;
+  }
+
+  #readmore {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #ffffff00;
+  padding: 0.3em 1.2em;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #878787;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 0.1rem #878787 inset;
+  scale: 60%;
+  transform: translateX(-40px) !important;
+  margin-top: 25px;
+}
+
+#go-back {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #ffffff00;
+  padding: 0.3em 1.2em;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #878787;
+  scale: 80%;
+  transform: translateX(-40px);
+}
+
+ul#project-list {
+  display: flex;
+  flex-flow: column;
+  line-height: 2em;
+  font-size: 26px;
+  margin-top: 6em;
+  align-items: center;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  color: black;
+}
+
+span {
+  font-size: 12px;
+  padding-left: 5px;
+  font-weight: 500;
+  color: #ADADAD;
+}
+
+
+.carousel-wrapper {
+  position: relative;
+  margin-top: -16px;
+}
+
+.footer {
+  margin-top: 30%;
+}
+}
